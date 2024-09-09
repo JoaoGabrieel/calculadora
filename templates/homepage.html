@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>calculadora</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="calculator">
+      <form method="post" action="/">
+        <div class="resultado">{{resultado}}</div>
+        <div class="botoes">
+          <button name="botao" value="C" class="bg">C</button>
+          <button name="botao" value="+-" class="bg">+-</button>
+          <button name="botao" value="%" class="bg">%</button>
+          <button name="botao" value="÷" class="bg_other">÷</button>
+
+          <button name="botao" value="7" class="number_color">7</button>
+          <button name="botao" value="8" class="number_color">8</button>
+          <button name="botao" value="9" class="number_color">9</button>
+          <button name="botao" value="x" class="bg_other">x</button>
+
+          <button name="botao" value="4" class="number_color">4</button>
+          <button name="botao" value="5" class="number_color">5</button>
+          <button name="botao" value="6" class="number_color">6</button>
+          <button name="botao" value="-" class="bg_other">-</button>
+
+          <button name="botao" value="1" class="number_color">1</button>
+          <button name="botao" value="2" class="number_color">2</button>
+          <button name="botao" value="3" class="number_color">3</button>
+          <button name="botao" value="+" class="bg_other">+</button>
+
+          <button
+            name="botao"
+            value="0"
+            class="number_color bg-light-gray-zero"
+          >
+            0
+          </button>
+          <button name="botao" value="," class="number_color">,</button>
+          <button name="botao" value="=" class="bg_other">=</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
