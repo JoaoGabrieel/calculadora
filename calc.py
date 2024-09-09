@@ -1,6 +1,7 @@
 def calcular(expressao):
   try:
-    expressao = expressao.replace('÷', '/').replace('x', '*')
+    expressao = expressao.replace('÷', '/').replace('x', '*').replace(',', '.')
+    
     
     resultado = eval(expressao)
     
